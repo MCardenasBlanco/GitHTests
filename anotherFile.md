@@ -1,6 +1,1 @@
-New File
-new change
-otro
-más cambios
-otros
-otro mejor
+these contents have changed
