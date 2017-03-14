@@ -6,5 +6,5 @@ node () {
               doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], 
               userRemoteConfigs: [[url: 'https://github.com/MCardenasBlanco/pipeline-as-code-demo']]])
     sh 'ls -lrt'
-    sh 'echo ${env.BUILD_NUMBER}'
+    sh 'echo $env.BUILD_NUMBER'
 }
