@@ -1,5 +1,6 @@
 #!groovy
 
+//Comments included
 stage 'Dev'
 node () {
     checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
