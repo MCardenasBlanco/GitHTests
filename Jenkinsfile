@@ -9,9 +9,8 @@ node () {
     sh 'ls -lrt'
     println "Build: ${env.BUILD_NUMBER}"
     println "Build $env.BUILD_NUMBER"
-    println myTest()
+    println currentBuild.rawBuild.changeSets.size()
+    //https://support.cloudbees.com/hc/en-us/articles/217630098-How-to-Access-Changelogs-in-a-Pipeline-Job
 }
 
-@NonCps def myTest(){
- return Jenkins.instance.getAllItems(Job).size().toString()   
-}
+
