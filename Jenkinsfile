@@ -9,4 +9,9 @@ node () {
     sh 'ls -lrt'
     println "Build: ${env.BUILD_NUMBER}"
     println "Build $env.BUILD_NUMBER"
+    println myTest()
+}
+
+@NonCps def myTest(){
+ return Jenkins.instance.getAllItems(Job).size().toString()   
 }
