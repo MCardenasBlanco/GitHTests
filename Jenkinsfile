@@ -11,7 +11,7 @@ node () {
     println "Build $env.BUILD_NUMBER"
     println currentBuild.rawBuild.changeSets.getItems()[0].getMsg()
     //https://support.cloudbees.com/hc/en-us/articles/217630098-How-to-Access-Changelogs-in-a-Pipeline-Job
-    //Test
+    //Rejected access
 }
 
 
