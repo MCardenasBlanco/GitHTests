@@ -7,7 +7,7 @@ node() {
    
     stage ('Build') {
     echo "Compile, run unit tests, publish to Nexus, publish coverage"
-   checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GHMCB', url: 'https://github.com/MCardenasBlanco/GitHTests.git']]])//sh 'mvn clean install -U -Dmaven.test.skip=true'
+   checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GHMCB', url: 'https://github.com/MCardenasBlanco/RepoB.git']]])//sh 'mvn clean install -U -Dmaven.test.skip=true'
     setBuildName("")
    }
     checkpoint 'Finished Build'
