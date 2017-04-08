@@ -12,6 +12,7 @@ node () {
     println currentBuild.rawBuild.changeSets.getItems()[0].getMsg()
     //https://support.cloudbees.com/hc/en-us/articles/217630098-How-to-Access-Changelogs-in-a-Pipeline-Job
     //Rejected access
+    //Change file 2
 }
 
 
