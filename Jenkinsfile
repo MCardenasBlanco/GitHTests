@@ -3,7 +3,7 @@ pipeline {
     environment{
         AGENT="test"
     }
-    agent { label "$AGENT" } 
+    agent { label AGENT } 
     stages {
         stage('Example Build') {
             
