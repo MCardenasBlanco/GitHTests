@@ -4,9 +4,9 @@ pipeline {
         AGENT="test"
     }
     
-    String res = env.AGENT
     
-    agent { label res } 
+    
+    agent { label env.AGENT } 
     stages {
         stage('Example Build') {
             
