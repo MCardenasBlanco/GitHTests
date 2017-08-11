@@ -1,7 +1,7 @@
 
 pipeline {
     environment{
-        AGENT="test value"
+        AGENT="test"
     }
     agent { label '${AGENT}' } 
     stages {
