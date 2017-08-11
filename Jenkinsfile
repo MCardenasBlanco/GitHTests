@@ -20,9 +20,7 @@ pipeline {
             steps {
                 echo 'Hello, JDK'
                 sh 'java -version'
-                echo AGENT
-                echo "${AGENT}"
-                echo "${env.AGENT}"
+               
             }
         }
     }
