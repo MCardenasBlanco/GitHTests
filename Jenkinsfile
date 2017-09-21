@@ -1,6 +1,9 @@
 
-@Library('MCardenasBlanco/jenkins-basic-shared-library-sample') _
-standardPipeline {
-    projectName = "Project1"
-    serverDomain = "Project1 Server Domain"
-}
+@Library('shared-sample')
+import org.mcb.sample
+
+node{
+def z = new org.mcb.sample()
+
+z.checkOutFrom("git@github.com:MCardenasBlanco/shared-lib-sample.git")
+    }
