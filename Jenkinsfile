@@ -7,8 +7,8 @@ def z = new org.mcb.sample()
 
 //z.checkOutFrom("git@github.com:MCardenasBlanco/tfs-plugin.git")
     echo "Initializing"
-    echo "${env.BRANCH_NAME}"
+    echo "${env.BUILD_NUMBER}"
     sleep 50
-    echo "${env.BRANCH_NAME}"
+    echo "${env.BUILD_NUMBER}"
     
     }
