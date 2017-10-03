@@ -1,12 +1,8 @@
-
-@Library('shared-sample')
-import org.mcb.sample
-
 @Library('wsutil')
 import org.mcb.wsutil
 
 node{
-def z = new org.mcb.sample()
+
 
 //z.checkOutFrom("git@github.com:MCardenasBlanco/tfs-plugin.git")
     echo "Initializing"
