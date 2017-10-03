@@ -2,7 +2,7 @@
 @Library('shared-sample')
 import org.mcb.sample
 
-@Library('ws-util')
+@Library('wsutil')
 import org.mcb.wsutil
 
 node{
