@@ -14,7 +14,7 @@ def z = new org.mcb.sample()
     //sleep 5
     echo "${env.BUILD_NUMBER}"
     
-    def t = new org.mcb.wsutil
+    def t = new org.mcb.wsutil()
     println t.response.httpResponse.statusCode
     
     }
