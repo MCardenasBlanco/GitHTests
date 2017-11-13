@@ -1,5 +1,5 @@
-@Library('wsutil')
-import org.mcb.wsutil
+Wswrapper@Library('wsutil')
+import org.mcb.Wswrapper
 
 node{
 
@@ -10,7 +10,7 @@ node{
     //sleep 5
     echo "${env.BUILD_NUMBER}"
     
-    def t = new org.mcb.wsutil()
+    def t = new org.mcb.Wswrapper()
     println t.response.httpResponse.statusCode
     
     }
