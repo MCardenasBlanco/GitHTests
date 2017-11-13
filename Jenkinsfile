@@ -1,4 +1,4 @@
-Wswrapper@Library('wsutil')
+@Library('wsutil')
 import org.mcb.Wswrapper
 
 node{
