@@ -6,11 +6,11 @@ node{
     stage('test'){
     echo "Initializing"
     echo "${env.BUILD_NUMBER}"
-    //sleep 5
+    sleep 5
     }
     stage('deployment'){
     echo "${env.BUILD_NUMBER}"
-    
+    sleep 5
     }
     
     }
