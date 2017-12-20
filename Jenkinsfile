@@ -1,10 +1,12 @@
 pipeline{
     agent none
     stages{
+        if(false){
         stage('MacOSX') {
             when { expression {false} }
             agent { label 'MacOSX' }
             steps { echo 'LINUX' }
+        }
         }
         stage('linux') {
             when { expression {true} }
