@@ -7,7 +7,10 @@ pipeline{
         }
        
         stage('linux') {
-            steps { echo 'test'}
+            steps { 
+                echo 'test'
+                echo 'changes for new PR'  
+            }
         }
         
     }
