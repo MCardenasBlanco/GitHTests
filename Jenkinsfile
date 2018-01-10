@@ -3,7 +3,9 @@ pipeline{
     stages{
        
         stage('MacOSX') {
-            steps{ echo 'test' }
+            steps{ echo 'test'
+                 echo 'change in branch'
+                 }
         }
        
         stage('linux') {
