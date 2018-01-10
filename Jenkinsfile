@@ -3,11 +3,11 @@ pipeline{
     stages{
        
         stage('MacOSX') {
-         echo 'test'
+            steps{ echo 'test' }
         }
        
         stage('linux') {
-            echo 'test'
+            steps { echo 'test'}
         }
         
     }
