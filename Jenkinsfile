@@ -1,17 +1,14 @@
 pipeline{
-    agent none
+    agent any
     stages{
        
         stage('MacOSX') {
-            when { expression {false} }
-            agent { label 'MacOSX' }
-            steps { echo 'LINUX' }
+         echo 'test'
         }
        
         stage('linux') {
-            when { expression {true} }
-            agent { label 'default' }
-            steps { echo 'Running in the agent with the label default' }
+            echo 'test'
         }
+        
     }
 }
