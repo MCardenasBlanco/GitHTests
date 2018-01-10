@@ -5,6 +5,7 @@ pipeline{
         stage('MacOSX') {
             steps{ echo 'test'
                  echo 'change in branch'
+                  echo 'commit one'
                  }
         }
        
