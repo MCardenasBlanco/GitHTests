@@ -7,7 +7,7 @@ pipeline{
             
             steps{ echo 'test' 
                   throttle(['test_2']) {
-    node() {
+    node('master') {
         sh "sleep 500"
         echo "Done"
     }
