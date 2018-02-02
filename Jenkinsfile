@@ -2,14 +2,18 @@ pipeline{
     agent any
     
     stages{
-       throttle(['test_2']) {
+      
+        stage('MacOSX') {
+            
+            steps{ echo 'test' 
+                  throttle(['test_2']) {
     node() {
         sh "sleep 500"
         echo "Done"
     }
+                 }
+            
 }
-        stage('MacOSX') {
-            steps{ echo 'test' }
         }
        
         stage('linux') {
