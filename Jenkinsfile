@@ -1,5 +1,11 @@
 pipeline{
     agent any
+    throttle(['test_2']) {
+    node() {
+        sh "sleep 500"
+        echo "Done"
+    }
+}
     stages{
        
         stage('MacOSX') {
