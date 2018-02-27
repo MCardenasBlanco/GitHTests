@@ -28,12 +28,13 @@
       ])
      ])
 
+	
+
+node(){
 	def event = X_GitHub_Event_0
 	print event
 	print repoName
 	def serviceName = repoName
-
-node(){
-    print event
+        print event
 	print repoName
 }
